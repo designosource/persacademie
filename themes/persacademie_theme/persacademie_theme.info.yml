@@ -1,0 +1,19 @@
+name: Persacademie Theme
+type: theme
+description: 'Thema voor de academie van de periodieke pers'
+base theme: bootstrap
+core: 8.x
+
+libraries:
+  - persacademie_theme/default
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  content_top: 'Content top'
+  content: 'Content'
+  content_bottom: 'Content bottom'
+  sidebar_left: 'Sidebar left'
+  sidebar_right: 'Sidebar right'
+  footer: 'Footer'

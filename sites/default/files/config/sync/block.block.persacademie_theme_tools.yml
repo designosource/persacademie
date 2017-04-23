@@ -1,0 +1,26 @@
+uuid: 245a6556-007d-4686-a88d-26983be27fe2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - persacademie_theme
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: persacademie_theme_tools
+theme: persacademie_theme
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Hulpmiddelen
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

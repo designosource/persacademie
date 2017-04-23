@@ -1,0 +1,22 @@
+uuid: d69a2c3c-d969-43bb-8b3e-e144cc529518
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - persacademie_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: persacademie_theme_content
+theme: persacademie_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

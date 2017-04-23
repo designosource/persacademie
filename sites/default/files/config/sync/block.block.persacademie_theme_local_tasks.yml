@@ -1,0 +1,22 @@
+uuid: 1a8819cd-260c-4c46-8ae1-204af94ccca6
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - persacademie_theme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: persacademie_theme_local_tasks
+theme: persacademie_theme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

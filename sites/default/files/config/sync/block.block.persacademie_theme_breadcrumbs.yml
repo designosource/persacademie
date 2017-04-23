@@ -1,0 +1,22 @@
+uuid: 16653163-a1d1-4115-8cd8-34be506b5eb3
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - persacademie_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: persacademie_theme_breadcrumbs
+theme: persacademie_theme
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

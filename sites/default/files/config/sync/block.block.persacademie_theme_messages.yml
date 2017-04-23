@@ -1,0 +1,22 @@
+uuid: bfb7f303-6092-43df-9ad8-32ab45866974
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - persacademie_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: persacademie_theme_messages
+theme: persacademie_theme
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

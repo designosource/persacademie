@@ -1,0 +1,25 @@
+uuid: 2511d039-ac88-4909-abe5-e64bb054a8f1
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - persacademie_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: persacademie_theme_branding
+theme: persacademie_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

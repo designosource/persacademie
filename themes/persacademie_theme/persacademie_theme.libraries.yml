@@ -1,0 +1,6 @@
+default:
+  css:
+    theme:
+      css/main.css: {}
+  js:
+      js/main.js: {}
