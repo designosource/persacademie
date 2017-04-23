@@ -1,0 +1,10 @@
+uuid: 6594daf5-78bd-4355-8985-e1ec926fac24
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Voet
+description: 'Site information links'
+locked: true
