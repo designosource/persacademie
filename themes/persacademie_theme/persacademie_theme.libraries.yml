@@ -2,5 +2,6 @@ default:
   css:
     theme:
       css/main.css: {}
+      css/reset.css: {}
   js:
       js/main.js: {}

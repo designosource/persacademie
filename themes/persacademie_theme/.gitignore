@@ -1,1 +1,7 @@
 .idea/
+node_modules
+*.log
+tmp
+dest
+css/main.css
+*.map
