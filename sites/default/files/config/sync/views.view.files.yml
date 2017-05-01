@@ -302,7 +302,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Grootte
+          label: Size
           exclude: false
           alter:
             alter_text: false

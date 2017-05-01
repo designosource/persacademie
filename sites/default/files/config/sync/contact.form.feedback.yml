@@ -10,5 +10,5 @@ recipients:
   - ben.witters@hotmail.com
 reply: ''
 weight: 0
-message: 'Uw bericht is verzonden.'
+message: 'Your message has been sent.'
 redirect: ''

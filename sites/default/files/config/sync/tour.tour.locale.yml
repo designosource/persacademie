@@ -30,7 +30,7 @@ tips:
   locale-search:
     id: locale-search
     plugin: text
-    label: Zoeken
+    label: Search
     body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
     weight: 3
     attributes:

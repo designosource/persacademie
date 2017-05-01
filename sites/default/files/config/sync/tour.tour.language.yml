@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: K3KVksdkREnIdd2idoIA9TDHQew_WreFzTG-DHmz9Z4
 id: language
-label: Taal
+label: Language
 module: language
 routes:
   -
@@ -16,7 +16,7 @@ tips:
   language-overview:
     id: language-overview
     plugin: text
-    label: Talen
+    label: Languages
     body: '<p>The "Languages" page allows you to add, edit, delete, and reorder languages for the site.</p>'
     weight: 1
   language-add:
