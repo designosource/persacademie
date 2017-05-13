@@ -1,0 +1,105 @@
+uuid: 1325b2a0-9cfc-4ba5-8e6f-a68776de1991
+langcode: nl
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.vorming.field_data
+    - field.field.node.vorming.field_duur
+    - field.field.node.vorming.field_email
+    - field.field.node.vorming.field_inschrijvingsformulier
+    - field.field.node.vorming.field_omschrijving
+    - field.field.node.vorming.field_prijs
+    - field.field.node.vorming.field_start
+    - field.field.node.vorming.field_trainer
+    - field.field.node.vorming.field_type_
+    - node.type.vorming
+  module:
+    - datetime
+    - text
+    - user
+    - webform
+id: node.vorming.token
+targetEntityType: node
+bundle: vorming
+mode: token
+content:
+  field_data:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_duur:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_inschrijvingsformulier:
+    weight: 109
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_omschrijving:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_prijs:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_start:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_trainer:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type_:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

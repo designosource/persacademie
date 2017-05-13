@@ -1,0 +1,9 @@
+uuid: 4d3284a0-8487-4680-a033-d1a30bdda71f
+langcode: nl
+status: true
+dependencies: {  }
+name: Locaties
+vid: locaties
+description: 'Lijst van locaties waar vormingen door gaan'
+hierarchy: 0
+weight: 0

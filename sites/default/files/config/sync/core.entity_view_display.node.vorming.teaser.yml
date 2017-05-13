@@ -1,0 +1,19 @@
+uuid: d4b53ddf-9b68-483b-8bd0-4df8adaebb4d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.vorming
+  module:
+    - user
+id: node.vorming.teaser
+targetEntityType: node
+bundle: vorming
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,17 @@
+uuid: 1ccfabe2-8a44-4f96-82da-b1c20ac4ca24
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Vorming
+type: vorming
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

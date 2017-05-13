@@ -1,0 +1,107 @@
+uuid: e1f7617e-b992-4336-bfa0-a12ea1f1ca1b
+langcode: nl
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: inschrijvingsformuliervormingen
+title: 'Inschrijvingsformulier vormingen'
+description: ''
+category: ''
+elements: "personal_information:\n  '#type': fieldset\n  '#title': 'Informatie deelnemer'\n  name:\n    '#type': textfield\n    '#title': Naam\n    '#required': true\n  email:\n    '#title': Email\n    '#type': email\n    '#required': true\n  street:\n    '#title': 'Straat en nummer'\n    '#type': textfield\n    '#required': true\n  town:\n    '#title': 'Postcode en gemeente'\n    '#type': textfield\n    '#required': true\n  phone:\n    '#title': Telefoonnumer\n    '#type': textfield\n  function:\n    '#title': Functie\n    '#type': textfield\n  company:\n    '#title': 'Instelling of bedrijf'\n    '#type': textfield\nbilling_information:\n  '#type': fieldset\n  '#title': 'Informatie facturatie'\n  billing_check:\n    '#type': checkbox\n    '#title': 'Het facturatieadres is verschillend van mijn persoonlijk adres'\n    '#states':\n      checked:\n        '':\n          '': ''\n  billing_name:\n    '#type': textfield\n    '#title': 'Naam, bedrijf of organisatie'\n    '#states':\n      visible:\n        ':input[name=\"billing_check\"]':\n          checked: true\n  contact_person:\n    '#type': textfield\n    '#title': Contactpersoon\n    '#states':\n      visible:\n        ':input[name=\"billing_check\"]':\n          checked: true\n  billing_street:\n    '#type': textfield\n    '#title': 'Straat en nummer'\n    '#states':\n      visible:\n        ':input[name=\"billing_check\"]':\n          checked: true\n  billing_town:\n    '#type': textfield\n    '#title': 'Postcode en gemeente'\n    '#states':\n      visible:\n        ':input[name=\"billing_check\"]':\n          checked: true\n  billing_phone:\n    '#type': textfield\n    '#title': Telefoonnumer\n    '#states':\n      visible:\n        ':input[name=\"billing_check\"]':\n          checked: true\n  btw_number:\n    '#type': textfield\n    '#title': BTW-nummer\n    '#input_mask': 'BE 9999.999.999'\n    '#states':\n      visible:\n        ':input[name=\"billing_check\"]':\n          checked: true\n  billing_extra_comments:\n    '#type': textarea\n    '#title': 'Opmerkingen facturatie (bv. factuur in 3 exemplaren)'\n    '#states':\n      visible:\n        ':input[name=\"billing_check\"]':\n          checked: true\n"
+css: ''
+javascript: ''
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_label: 'Inschrijven '
+  form_submit_once: false
+  form_submit_attributes: {  }
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_log: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_next_button_attributes: {  }
+  wizard_prev_button_label: ''
+  wizard_prev_button_attributes: {  }
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_next_button_attributes: {  }
+  preview_prev_button_label: ''
+  preview_prev_button_attributes: {  }
+  preview_message: ''
+  draft: none
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_button_attributes: {  }
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: message
+  confirmation_title: ''
+  confirmation_message: 'U bent ingeschreven voor [current-page:title], zodadelijk ontvangt u een bevestigingsmail.'
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: 12
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

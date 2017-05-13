@@ -1,0 +1,28 @@
+uuid: e478893d-5b86-4a8f-8cc4-4b3a8169e98a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locatie
+    - node.type.vorming
+    - taxonomy.vocabulary.locaties
+id: node.vorming.field_locatie
+field_name: field_locatie
+entity_type: node
+bundle: vorming
+label: Locatie
+description: 'De locatie waar de vorming doorgaat.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      locaties: locaties
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

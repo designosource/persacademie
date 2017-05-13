@@ -1,0 +1,18 @@
+uuid: 1c033c86-62cd-4118-b84a-115843399a66
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.vorming
+id: node.vorming.title
+field_name: title
+entity_type: node
+bundle: vorming
+label: 'Naam vorming'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

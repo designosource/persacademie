@@ -1,0 +1,14 @@
+uuid: 6bfc0618-ebc9-4c98-b4ed-3adc87f328d5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.lesgever
+  module:
+    - user
+id: user_remove_role_action.lesgever
+label: 'Verwijder de rol Lesgever van de geselecteerde gebruikers'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lesgever

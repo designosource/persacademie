@@ -1,0 +1,11 @@
+uuid: 617099fc-747d-482b-b420-9aad12cea0e7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_vorming
+id: taxonomy_term.type_vorming
+target_entity_type_id: taxonomy_term
+target_bundle: type_vorming
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: 102b7b6f-bea4-4c15-ba9f-558c9b342c71
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prijs
+    - node.type.vorming
+id: node.vorming.field_prijs
+field_name: field_prijs
+entity_type: node
+bundle: vorming
+label: Prijs
+description: 'De prijs van de vorming'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

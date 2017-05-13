@@ -1,11 +1,11 @@
 uuid: 5514c2b1-3c37-40b3-bb03-c3ff336c5e80
 langcode: nl
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
 uid: 1
-template: false
+template: true
 id: inschrijvingsformulier_vormingen
 title: 'Inschrijvingsformulier vormingen'
 description: ''

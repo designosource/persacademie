@@ -1,0 +1,19 @@
+uuid: 7eba4989-ebdf-4542-a9a3-d9230bbee786
+langcode: nl
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_locatiegegevens
+field_name: field_locatiegegevens
+entity_type: taxonomy_term
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

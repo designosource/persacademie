@@ -1,0 +1,21 @@
+uuid: b2974723-4332-4903-9e07-dc7163810898
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_omschrijving
+    - node.type.vorming
+  module:
+    - text
+id: node.vorming.field_omschrijving
+field_name: field_omschrijving
+entity_type: node
+bundle: vorming
+label: Omschrijving
+description: 'Omschrijving van de vorming'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

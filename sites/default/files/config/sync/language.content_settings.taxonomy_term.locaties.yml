@@ -1,0 +1,11 @@
+uuid: ec351e60-f23c-4cc2-bcc1-990cf3c6a7fc
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.locaties
+id: taxonomy_term.locaties
+target_entity_type_id: taxonomy_term
+target_bundle: locaties
+default_langcode: site_default
+language_alterable: false

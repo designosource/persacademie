@@ -1,0 +1,36 @@
+uuid: cd758531-a78a-443c-a8cb-511e8c83a8ea
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inschrijvingsformulier
+    - node.type.vorming
+    - webform.webform.inschrijvingsformuliervormingen
+  module:
+    - webform
+id: node.vorming.field_inschrijvingsformulier
+field_name: field_inschrijvingsformulier
+entity_type: node
+bundle: vorming
+label: 'Schrijf je in voor deze vorming'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: e1f7617e-b992-4336-bfa0-a12ea1f1ca1b
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

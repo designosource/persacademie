@@ -1,0 +1,30 @@
+uuid: bf3eb435-527a-4076-957c-022d5da74b0a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.locaties.field_locatiegegevens
+    - taxonomy.vocabulary.locaties
+  module:
+    - text
+id: taxonomy_term.locaties.default
+targetEntityType: taxonomy_term
+bundle: locaties
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_locatiegegevens:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  langcode: true

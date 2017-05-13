@@ -1,0 +1,31 @@
+uuid: 68363699-98da-4a24-ab9a-37cff7199a9a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trainer
+    - node.type.vorming
+id: node.vorming.field_trainer
+field_name: field_trainer
+entity_type: node
+bundle: vorming
+label: Trainer
+description: 'De trainer die de opleiding geeft'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        lesgever: lesgever
+        administrator: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

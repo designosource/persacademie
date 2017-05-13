@@ -1,0 +1,9 @@
+uuid: 3e33ddd7-47bc-49ef-a920-b356d9f315e4
+langcode: nl
+status: true
+dependencies: {  }
+name: 'Type vorming'
+vid: type_vorming
+description: 'Types van vormingen'
+hierarchy: 0
+weight: 0

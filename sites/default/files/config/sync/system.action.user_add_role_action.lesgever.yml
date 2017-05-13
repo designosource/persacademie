@@ -1,0 +1,14 @@
+uuid: 8e1b206a-1f9a-4033-9a33-c25e23dbc3f0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.lesgever
+  module:
+    - user
+id: user_add_role_action.lesgever
+label: 'Voeg de rol Lesgever toe aan de geselecteerde gebruikers'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lesgever

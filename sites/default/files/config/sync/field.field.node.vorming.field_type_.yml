@@ -1,0 +1,28 @@
+uuid: 3ff31af5-f9a6-42d3-b25e-0bb04bc3c93f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_
+    - node.type.vorming
+    - taxonomy.vocabulary.type_vorming
+id: node.vorming.field_type_
+field_name: field_type_
+entity_type: node
+bundle: vorming
+label: 'Type '
+description: 'Type vorming'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_vorming: type_vorming
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

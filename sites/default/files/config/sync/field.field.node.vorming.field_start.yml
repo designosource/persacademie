@@ -1,0 +1,21 @@
+uuid: dd385714-4421-4155-b1c9-477562c57870
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start
+    - node.type.vorming
+  module:
+    - datetime
+id: node.vorming.field_start
+field_name: field_start
+entity_type: node
+bundle: vorming
+label: Start
+description: 'Start van de vorming'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

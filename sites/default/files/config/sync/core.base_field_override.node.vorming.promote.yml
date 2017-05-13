@@ -1,0 +1,22 @@
+uuid: 569cacc8-7256-4f12-995e-fcc8c769aea9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.vorming
+id: node.vorming.promote
+field_name: promote
+entity_type: node
+bundle: vorming
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

@@ -1,0 +1,11 @@
+uuid: b745e72a-30a6-4096-bd25-f6f1d011c82c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.vorming
+id: node.vorming
+target_entity_type_id: node
+target_bundle: vorming
+default_langcode: site_default
+language_alterable: false

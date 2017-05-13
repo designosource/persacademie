@@ -1,0 +1,21 @@
+uuid: e550ceef-8c74-4766-9406-ea0d46f8002a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data
+    - node.type.vorming
+  module:
+    - datetime
+id: node.vorming.field_data
+field_name: field_data
+entity_type: node
+bundle: vorming
+label: Data
+description: 'De data van deze vorming'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

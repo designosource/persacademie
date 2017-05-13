@@ -1,0 +1,23 @@
+uuid: 91335886-7ee6-47ae-ac42-165e9acc6463
+langcode: nl
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_paths
+label: 'Taxonomy paths'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:vocabulary:name]/[term:name]'
+selection_criteria:
+  e8342d31-c5ae-4bd8-b6de-976c354d85c4:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      type_vorming: type_vorming
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: e8342d31-c5ae-4bd8-b6de-976c354d85c4
+selection_logic: and
+weight: -5
+relationships: {  }
