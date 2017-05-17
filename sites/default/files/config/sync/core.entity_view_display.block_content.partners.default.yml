@@ -1,0 +1,25 @@
+uuid: 444e9c38-e3d1-472f-bf0f-1931bf40c860
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.partners
+    - field.field.block_content.partners.field_logo_partner_s_
+  module:
+    - image
+id: block_content.partners.default
+targetEntityType: block_content
+bundle: partners
+mode: default
+content:
+  field_logo_partner_s_:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

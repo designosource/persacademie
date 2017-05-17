@@ -8,12 +8,14 @@ libraries:
   - persacademie_theme/default
 
 regions:
-  header: 'Header'
-  primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
-  content_top: 'Content top'
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
   content: 'Content'
-  content_bottom: 'Content bottom'
-  sidebar_left: 'Sidebar left'
-  sidebar_right: 'Sidebar right'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
   footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'

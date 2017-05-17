@@ -1,0 +1,22 @@
+uuid: ebe6b1a6-221e-408c-9f26-a032228a96d6
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: inhoudstype_pagina_path
+label: 'Inhoudstype pagina path'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  e8ae724c-1253-4b1e-a776-e6ad2e6ddd00:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e8ae724c-1253-4b1e-a776-e6ad2e6ddd00
+selection_logic: and
+weight: -5
+relationships: {  }

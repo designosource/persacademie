@@ -1,0 +1,30 @@
+uuid: 22287f91-460f-4ef8-88ec-8758e4e808d3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.vormingen
+  module:
+    - system
+    - views
+  theme:
+    - persacademie_theme
+id: views_block__vormingen_block_teaser_vormingen_2
+theme: persacademie_theme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:vormingen-block_teaser_vormingen'
+settings:
+  id: 'views_block:vormingen-block_teaser_vormingen'
+  label: 'Onze vormingen'
+  provider: views
+  label_display: visible
+  views_label: 'Onze vormingen'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/vormingen\r\n<front>"
+    negate: false
+    context_mapping: {  }

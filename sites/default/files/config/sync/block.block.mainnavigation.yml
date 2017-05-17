@@ -1,0 +1,24 @@
+uuid: 6b42817a-069f-4e90-85df-b7b927f11376
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - persacademie_theme
+id: mainnavigation
+theme: persacademie_theme
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 6bb75f78-7393-4603-b0b9-07e2563c444e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bez
+    - node.type.page
+  module:
+    - text
+id: node.page.field_bez
+field_name: field_bez
+entity_type: node
+bundle: page
+label: 'Beschrijving links'
+description: 'De beschrijving die links over de helft van de breedte wordt getoond. Rechts is er ruimte voorzien voor een afbeelding.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

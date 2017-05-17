@@ -9,7 +9,7 @@ _core:
 id: persacademie_theme_local_actions
 theme: persacademie_theme
 region: content
-weight: -20
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

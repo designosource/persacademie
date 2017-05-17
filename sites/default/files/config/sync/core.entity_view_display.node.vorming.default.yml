@@ -16,99 +16,123 @@ dependencies:
     - node.type.vorming
   module:
     - datetime
+    - ds
     - text
     - user
     - webform
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_start
+        - field_omschrijving
+      right:
+        - field_trainer
+        - field_data
+        - field_email
+        - field_duur
+        - field_prijs
+        - field_locatie
+      footer:
+        - field_inschrijvingsformulier
 id: node.vorming.default
 targetEntityType: node
 bundle: vorming
 mode: default
 content:
   field_data:
-    weight: 105
+    weight: 3
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
+      date_format: 'l d M Y'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: datetime_custom
+    region: right
   field_duur:
-    weight: 107
+    weight: 5
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: right
   field_email:
-    weight: 106
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
+    region: right
   field_inschrijvingsformulier:
-    weight: 109
+    weight: 8
     label: above
     settings:
       source_entity: true
     third_party_settings: {  }
     type: webform_entity_reference_entity_view
-    region: content
+    region: footer
   field_locatie:
-    weight: 110
-    label: hidden
+    weight: 7
+    label: above
     settings:
-      link: true
       view_mode: default
+      link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
-    region: content
+    region: right
   field_omschrijving:
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: left
   field_prijs:
-    weight: 108
+    weight: 6
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: right
   field_start:
-    weight: 103
-    label: above
+    weight: 0
+    label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      date_format: 'd-m-Y H:i'
     third_party_settings: {  }
-    type: datetime_default
-    region: content
+    type: datetime_custom
+    region: left
   field_trainer:
-    weight: 104
+    weight: 2
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_type_:
-    weight: 101
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
+    region: right
 hidden:
+  field_type_: true
   langcode: true
+  links: true

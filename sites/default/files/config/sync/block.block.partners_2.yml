@@ -1,0 +1,31 @@
+uuid: eb85c6e1-4627-4dd6-a446-1cb4dff10c70
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:partners:a0e5b490-003c-4574-8f45-eee158c2e190'
+  module:
+    - block_content
+    - system
+  theme:
+    - persacademie_theme
+id: partners_2
+theme: persacademie_theme
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:a0e5b490-003c-4574-8f45-eee158c2e190'
+settings:
+  id: 'block_content:a0e5b490-003c-4574-8f45-eee158c2e190'
+  label: Partners
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /wie-doet-wat
+    negate: false
+    context_mapping: {  }

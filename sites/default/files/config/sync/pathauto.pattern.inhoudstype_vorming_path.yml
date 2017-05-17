@@ -1,0 +1,22 @@
+uuid: 0cd98aa0-859f-4d21-a2cd-ea5d48de3dea
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: inhoudstype_vorming_path
+label: 'Inhoudstype vorming path'
+type: 'canonical_entities:node'
+pattern: '/vormingen/[node:title]'
+selection_criteria:
+  81907923-5909-45fd-8559-7a875e3252c8:
+    id: node_type
+    bundles:
+      vorming: vorming
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 81907923-5909-45fd-8559-7a875e3252c8
+selection_logic: and
+weight: 0
+relationships: {  }

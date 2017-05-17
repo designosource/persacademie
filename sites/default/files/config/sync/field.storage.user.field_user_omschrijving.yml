@@ -1,0 +1,19 @@
+uuid: b1c52d16-aabf-4600-86db-2bfa542deb68
+langcode: nl
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_user_omschrijving
+field_name: field_user_omschrijving
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

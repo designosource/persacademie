@@ -1,0 +1,19 @@
+uuid: 57630277-0414-4dc7-a915-21c9cf69a9bc
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_bez
+field_name: field_bez
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

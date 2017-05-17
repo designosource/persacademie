@@ -1,6 +1,6 @@
 uuid: 16653163-a1d1-4115-8cd8-34be506b5eb3
 langcode: nl
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: persacademie_theme_breadcrumbs
 theme: persacademie_theme
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: system_breadcrumb_block
 settings:

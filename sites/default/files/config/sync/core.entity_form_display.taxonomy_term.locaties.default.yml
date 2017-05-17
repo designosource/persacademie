@@ -3,7 +3,6 @@ langcode: nl
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.locaties.field_locatiegegevens
     - taxonomy.vocabulary.locaties
   module:
     - path
@@ -21,14 +20,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_locatiegegevens:
-    weight: 31
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
   langcode:
     type: language_select
     weight: 2

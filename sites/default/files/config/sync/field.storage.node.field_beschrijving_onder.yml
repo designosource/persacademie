@@ -1,0 +1,19 @@
+uuid: 3bf0f410-e53b-447d-aec5-b848c9b3d3e5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_beschrijving_onder
+field_name: field_beschrijving_onder
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

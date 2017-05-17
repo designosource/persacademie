@@ -1,0 +1,38 @@
+uuid: fab8b3da-28af-431b-aba0-51415cfd51c6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_afbeelding
+    - node.type.page
+  module:
+    - image
+id: node.page.field_afbeelding
+field_name: field_afbeelding
+entity_type: node
+bundle: page
+label: 'Afbeelding rechts'
+description: 'Deze afbeelding komt rechts van het veld beschrijving links te staan.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

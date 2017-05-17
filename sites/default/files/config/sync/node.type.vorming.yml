@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Vorming
 type: vorming
-description: ''
+description: 'Gebruik dit inhoudstype om een nieuwe vorming toe te voegen.'
 help: ''
 new_revision: false
 preview_mode: 1

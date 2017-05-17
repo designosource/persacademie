@@ -3,10 +3,14 @@ langcode: nl
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
+    - field.field.node.page.field_afbeelding
+    - field.field.node.page.field_beschrijving
+    - field.field.node.page.field_beschrijving_onder
+    - field.field.node.page.field_bez
     - node.type.page
   module:
     - ds
+    - image
     - text
     - user
 third_party_settings:
@@ -29,8 +33,14 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
+      header:
+        - field_beschrijving
       left:
-        - body
+        - field_bez
+      right:
+        - field_afbeelding
+      footer:
+        - field_beschrijving_onder
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -38,13 +48,35 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    type: text_summary_or_trimmed
-    weight: 0
-    region: left
+  field_afbeelding:
+    type: image
+    weight: 2
+    region: right
     label: hidden
     settings:
-      trim_length: 600
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_beschrijving:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: header
+  field_beschrijving_onder:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: footer
+  field_bez:
+    type: text_default
+    weight: 1
+    region: left
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
 hidden:
   langcode: true

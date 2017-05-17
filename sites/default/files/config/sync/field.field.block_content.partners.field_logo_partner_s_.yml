@@ -1,0 +1,38 @@
+uuid: ff2e2dbf-9db5-4c1b-81bb-a5017228b805
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.partners
+    - field.storage.block_content.field_logo_partner_s_
+  module:
+    - image
+id: block_content.partners.field_logo_partner_s_
+field_name: field_logo_partner_s_
+entity_type: block_content
+bundle: partners
+label: 'Logo partner(s)'
+description: 'Voeg een of meerdere logo''s van partners toe. Deze komen op de wie doet wat pagina te staan.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

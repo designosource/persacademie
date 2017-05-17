@@ -1,0 +1,31 @@
+uuid: c75965a0-9be8-4c8f-9340-1772b1a77090
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:partners:a0e5b490-003c-4574-8f45-eee158c2e190'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: partners
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:a0e5b490-003c-4574-8f45-eee158c2e190'
+settings:
+  id: 'block_content:a0e5b490-003c-4574-8f45-eee158c2e190'
+  label: Partners
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /wie-doet-wat
+    negate: false
+    context_mapping: {  }

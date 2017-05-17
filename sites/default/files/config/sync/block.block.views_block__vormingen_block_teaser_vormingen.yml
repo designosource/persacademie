@@ -1,0 +1,30 @@
+uuid: 9d374c6b-040b-4850-82f8-ec4db39605df
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.vormingen
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__vormingen_block_teaser_vormingen
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:vormingen-block_teaser_vormingen'
+settings:
+  id: 'views_block:vormingen-block_teaser_vormingen'
+  label: 'Onze vormingen'
+  provider: views
+  label_display: visible
+  views_label: 'Onze vormingen'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /vormingen
+    negate: false
+    context_mapping: {  }

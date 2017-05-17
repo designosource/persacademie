@@ -11,7 +11,7 @@ _core:
 id: persacademie_theme_branding
 theme: persacademie_theme
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:
