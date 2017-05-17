@@ -1,12 +1,12 @@
-uuid: b1c52d16-aabf-4600-86db-2bfa542deb68
+uuid: 1fe9a512-65d1-4a0e-99f6-f6ed41d0946c
 langcode: nl
 status: true
 dependencies:
   module:
     - text
     - user
-id: user.field_user_omschrijving
-field_name: field_user_omschrijving
+id: user.field_beschrijving
+field_name: field_beschrijving
 entity_type: user
 type: text_long
 settings: {  }

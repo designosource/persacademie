@@ -1,13 +1,11 @@
-uuid: 6f3e1c3a-ab6e-428c-8117-1f91b257b5d2
+uuid: 345d20fc-578d-42ca-9493-543ed8ca3276
 langcode: nl
 status: true
 dependencies:
   config:
-    - field.storage.user.field_user_omschrijving
-    - field.storage.user.user_picture
+    - field.storage.user.field_beschrijving
     - user.role.lesgever
   module:
-    - image
     - text
     - user
 id: lesgevers
@@ -53,12 +51,13 @@ display:
       pager:
         type: none
         options:
+          items_per_page: null
           offset: 0
       style:
         type: grid
         options:
           grouping: {  }
-          columns: 2
+          columns: 3
           automatic_width: true
           alignment: horizontal
           col_class_default: true
@@ -67,16 +66,11 @@ display:
           row_class_custom: ''
       row:
         type: fields
-        options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
       fields:
-        user_picture:
-          id: user_picture
-          table: user__user_picture
-          field: user_picture
+        name:
+          id: name
+          table: users_field_data
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
@@ -100,8 +94,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: true
-            ellipsis: true
+            word_boundary: false
+            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -121,58 +115,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: ''
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        name:
-          id: name
-          table: users_field_data
-          field: name
-          entity_type: user
-          entity_field: name
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
           click_sort_column: value
           type: user_name
-          settings: {  }
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -183,10 +129,13 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_user_omschrijving:
-          id: field_user_omschrijving
-          table: user__field_user_omschrijving
-          field: field_user_omschrijving
+          entity_type: user
+          entity_field: name
+          plugin_id: field
+        field_beschrijving:
+          id: field_beschrijving
+          table: user__field_beschrijving
+          field: field_beschrijving
           relationship: none
           group_type: group
           admin_label: ''
@@ -298,13 +247,13 @@ display:
           entity_type: user
           plugin_id: user_roles
       sorts: {  }
+      title: Lesgevers
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      title: 'Onze lesgevers'
     cache_metadata:
       max-age: -1
       contexts:
@@ -312,12 +261,11 @@ display:
         - 'languages:language_interface'
         - user.permissions
       tags:
-        - 'config:field.storage.user.field_user_omschrijving'
-        - 'config:field.storage.user.user_picture'
+        - 'config:field.storage.user.field_beschrijving'
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Pagina
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
@@ -329,5 +277,4 @@ display:
         - 'languages:language_interface'
         - user.permissions
       tags:
-        - 'config:field.storage.user.field_user_omschrijving'
-        - 'config:field.storage.user.user_picture'
+        - 'config:field.storage.user.field_beschrijving'

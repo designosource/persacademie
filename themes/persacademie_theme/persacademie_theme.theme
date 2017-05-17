@@ -1,0 +1,10 @@
+<?php
+
+function persacademie_theme_preprocess_page(array &$variables) {
+
+  // Load sitename and slogan.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+  $variables['site_slogan'] = $config->get('slogan');
+
+}

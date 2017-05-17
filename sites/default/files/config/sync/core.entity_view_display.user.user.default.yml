@@ -3,7 +3,7 @@ langcode: nl
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_user_omschrijving
+    - field.field.user.user.field_beschrijving
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -17,7 +17,7 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_user_omschrijving:
+  field_beschrijving:
     weight: 6
     label: above
     settings: {  }

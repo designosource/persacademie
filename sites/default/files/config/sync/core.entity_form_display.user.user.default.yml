@@ -3,7 +3,7 @@ langcode: nl
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_user_omschrijving
+    - field.field.user.user.field_beschrijving
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -28,8 +28,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_user_omschrijving:
-    weight: 4
+  field_beschrijving:
+    weight: 7
     settings:
       rows: 5
       placeholder: ''

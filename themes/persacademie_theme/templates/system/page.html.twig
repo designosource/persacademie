@@ -99,13 +99,13 @@
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="main-container js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div class="col-sm-12" role="heading">
+          <div class="container" role="heading">
             {{ page.header }}
           </div>
         {% endblock %}
@@ -163,11 +163,13 @@
         {% block content %}
           <a id="main-content"></a>
           {% if is_front %}
-            <section>
-              <h1 class="sitename">De persacademie</h1>
-              <h2>Vorming en bijscholing voor journalisten, redactionele medewerkers en uitgevers door ervaren experten</h2>
-              <div class="cta">
-                <a href="/vormingen" class="button button-accommodation">Bekijk onze vormingen</a>
+            <section class="container-fluid hero">
+              <div class="container hero-content">
+                <h1 class="sitename">{{ site_name }}</h1>
+                <h2 class="site-slogan">{{ site_slogan }}</h2>
+                <div class="cta">
+                  <a href="/vormingen" class="button button-accommodation">Bekijk onze vormingen</a>
+                </div>
               </div>
             </section>
           {% endif %}
