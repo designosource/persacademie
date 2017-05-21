@@ -5,3 +5,5 @@ default:
       css/reset.css: {}
   js:
       js/main.js: {}
+  dependencies:
+    - core/jquery
