@@ -1,0 +1,32 @@
+.block-views-blockvormingen-block-teaser-vormingen {
+  .view-content {
+    display: flex;
+    flex-flow: wrap;
+    .views-row {
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $smartphone-medium) {
+  .block-views-blockvormingen-block-teaser-vormingen {
+    .view-content {
+      .views-row {
+        width: 48% !important;
+        margin-right: 2%;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .block-views-blockvormingen-block-teaser-vormingen {
+    .view-content {
+      .views-row {
+        width: 32% !important;
+        margin-right: 1.33%;
+      }
+    }
+  }
+}
