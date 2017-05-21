@@ -1,0 +1,30 @@
+uuid: 0a2b43d6-2b48-49c4-942f-bf1eded0fc58
+langcode: nl
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_afbeelding
+field_name: field_afbeelding
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,49 @@
+uuid: 403a1c0b-6372-4a55-ab5e-a3c6baaf3bae
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.basis_block_met_afbeelding
+    - field.field.block_content.basis_block_met_afbeelding.body
+    - field.field.block_content.basis_block_met_afbeelding.field_afbeelding
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.basis_block_met_afbeelding.default
+targetEntityType: block_content
+bundle: basis_block_met_afbeelding
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_afbeelding:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

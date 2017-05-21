@@ -1,0 +1,25 @@
+uuid: f8016089-8b2f-40d3-9fb4-685f5c8d4e57
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:basis_block_met_afbeelding:a7343aff-8756-43d0-b416-a22bdc926da2'
+  module:
+    - block_content
+  theme:
+    - persacademie_theme
+id: contact
+theme: persacademie_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:a7343aff-8756-43d0-b416-a22bdc926da2'
+settings:
+  id: 'block_content:a7343aff-8756-43d0-b416-a22bdc926da2'
+  label: Contact
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

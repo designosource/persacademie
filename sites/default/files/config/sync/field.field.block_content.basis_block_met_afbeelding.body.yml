@@ -1,0 +1,22 @@
+uuid: a22d75ad-4176-4b4f-9cb1-95023a548bc6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.basis_block_met_afbeelding
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.basis_block_met_afbeelding.body
+field_name: body
+entity_type: block_content
+bundle: basis_block_met_afbeelding
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
