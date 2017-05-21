@@ -1,12 +1,14 @@
 /*
- * Components
- * Contains UI components.
- */
-
-/*
  * Settings
  * Contains fonts, color definitions, etc.
  */
 @import "settings/settings.colors";
 @import "settings/settings.fonts";
 @import "settings/settings.project";
+
+/*
+ * Components
+ * Contains UI components.
+ */
+@import "components/register-form";
+@import "components/vorming-detail";

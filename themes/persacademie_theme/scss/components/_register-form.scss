@@ -1,0 +1,47 @@
+.field--name-field-inschrijvingsformulier {
+  .panel-default {
+    border: none;
+  }
+  .panel-heading {
+    padding: 0;
+    background-color: transparent !important;
+    border: none;
+    margin-top: 10px;
+  }
+  .panel-body {
+    padding: 0;
+    .form-item {
+      label {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .field--name-field-inschrijvingsformulier {
+    .panel-body {
+      display: flex;
+      flex-flow: wrap;
+      .form-item {
+        width: 50%;
+        label::after {
+          background-repeat: no-repeat;
+          height: 11px;
+          margin-left: 2px;
+        }
+        textarea {
+          width: 90%;
+        }
+        input {
+          &.form-text, &.form-email {
+            width: 90%;
+          }
+        }
+      }
+      .form-type-checkbox {
+        width: 100%;
+      }
+    }
+  }
+}
