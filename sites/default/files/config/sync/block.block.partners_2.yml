@@ -19,7 +19,7 @@ settings:
   id: 'block_content:a0e5b490-003c-4574-8f45-eee158c2e190'
   label: Partners
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
