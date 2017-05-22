@@ -1,0 +1,21 @@
+.sitename {
+  text-align: center;
+  text-transform: uppercase;
+}
+.site-slogan {
+  text-align: center;
+}
+.cta {
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .site-slogan {
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .region-header {
+    margin-top: 30px;
+  }
+}

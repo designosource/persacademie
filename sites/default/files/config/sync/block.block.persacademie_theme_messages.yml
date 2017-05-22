@@ -11,7 +11,7 @@ _core:
 id: persacademie_theme_messages
 theme: persacademie_theme
 region: header
-weight: -6
+weight: -3
 provider: null
 plugin: system_messages_block
 settings:

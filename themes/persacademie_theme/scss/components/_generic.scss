@@ -1,0 +1,19 @@
+body {
+  overflow-x: hidden;
+}
+.group-left, .group-right {
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+.page-header {
+  border: none;
+}
+@media (min-width: $tablet) {
+  .group-left, .group-right {
+    width: 48% !important;
+    margin-bottom: 20px;
+  }
+  .group-left {
+    margin-right: 2%;
+  }
+}

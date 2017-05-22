@@ -1,7 +1,7 @@
-console.log('test');
+
 (function ($) {
     $(document).ready(function(){
-        
+        // Hamburger menu.
         $('.hamburger-menu').on('click', function(){
 
             $('.hamburger-menu-icon').toggleClass('is-clicked');

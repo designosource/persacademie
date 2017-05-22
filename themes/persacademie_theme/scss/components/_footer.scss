@@ -1,0 +1,13 @@
+.footer {
+  border-top: none;
+}
+@media (min-width: $tablet) {
+  footer {
+    .field--type-text-with-summary {
+      float: left;
+    }
+    .field--name-field-afbeelding {
+      float: right;
+    }
+  }
+}
