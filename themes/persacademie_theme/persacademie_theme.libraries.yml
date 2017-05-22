@@ -1,8 +1,8 @@
 default:
   css:
     theme:
-      css/main.css: {}
       css/reset.css: {}
+      css/main.css: {}
   js:
       js/main.js: {}
   dependencies:

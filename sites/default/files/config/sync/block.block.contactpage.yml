@@ -1,0 +1,31 @@
+uuid: 1f6e039d-aa05-4844-9617-4320a02a70e3
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f1819405-3f9a-4af0-acf3-23e49dafa046'
+  module:
+    - block_content
+    - system
+  theme:
+    - persacademie_theme
+id: contactpage
+theme: persacademie_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:f1819405-3f9a-4af0-acf3-23e49dafa046'
+settings:
+  id: 'block_content:f1819405-3f9a-4af0-acf3-23e49dafa046'
+  label: Contact
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

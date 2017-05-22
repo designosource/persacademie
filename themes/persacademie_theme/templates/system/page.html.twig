@@ -100,13 +100,24 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container js-quickedit-main-content">
-    <div class="row">
+    <div class="row {% if is_front %}front-page{% endif %}">
 
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div role="heading">
+          <div class="{% if is_front %}heading-hero{% else %}heading{% endif %}" role="heading">
             {{ page.header }}
+            {% if is_front %}
+              <section class="container-fluid hero">
+                <div class="container hero-content">
+                  <h1 class="sitename">{{ site_name }}</h1>
+                  <h2 class="site-slogan">{{ site_slogan }}</h2>
+                  <div class="cta">
+                    <a href="/vormingen" class="cta-vormingen">Bekijk onze vormingen</a>
+                  </div>
+                </div>
+              </section>
+            {% endif %}
           </div>
         {% endblock %}
       {% endif %}
@@ -162,17 +173,6 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {% if is_front %}
-            <section class="container-fluid hero">
-              <div class="container hero-content">
-                <h1 class="sitename">{{ site_name }}</h1>
-                <h2 class="site-slogan">{{ site_slogan }}</h2>
-                <div class="cta">
-                  <a href="/vormingen" class="cta-vormingen">Bekijk onze vormingen</a>
-                </div>
-              </div>
-            </section>
-          {% endif %}
           {{ page.content }}
         {% endblock %}
       </section>

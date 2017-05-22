@@ -1,5 +1,7 @@
 .footer {
   border-top: none;
+  background-color: $dark-grey;
+  color: $white
 }
 @media (min-width: $tablet) {
   footer {
