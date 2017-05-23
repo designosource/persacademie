@@ -1,15 +1,77 @@
 .footer {
   border-top: none;
   background-color: $dark-grey;
-  color: $white
+  color: $white;
+  margin-top: 0;
+  h2 {
+    text-align: center;
+    color: $white;
+  }
+  .footer-data {
+    display: flex;
+    flex-flow: wrap;
+    color: $white;
+    text-align: center;
+    .contact-data, .person-data {
+      margin-bottom: 20px;
+      width: 100%;
+      font-size: 1rem;
+      p {
+        line-height: 30px;
+      }
+    }
+    .contact-data {
+      padding-bottom: 15px;
+    }
+    .contact-data:after {
+      position: absolute;
+      left: calc(50% - 30px);
+      padding-top: 15px;
+      width: 60px;
+      height: 1px;
+      border-bottom: 2px solid $white;
+      content: "";
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .field--name-field-afbeelding {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+  }
 }
 @media (min-width: $tablet) {
-  footer {
-    .field--type-text-with-summary {
+  .footer {
+    padding-bottom: 0;
+    h2 {
+      text-align: left;
+    }
+    .block-title {
+      margin-bottom: 30px;
+    }
+    .footer-data {
+      display: inline-block;
+      text-align: left;
       float: left;
+      p {
+        margin: 0;
+      }
+      .contact-data {
+        padding-bottom: 15px;
+      }
+      .contact-data:after {
+        left: auto;
+      }
     }
     .field--name-field-afbeelding {
       float: right;
+      img {
+        margin-top: 0;
+      }
     }
   }
 }

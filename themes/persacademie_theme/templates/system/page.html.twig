@@ -115,6 +115,7 @@
                   <div class="cta">
                     <a href="/vormingen" class="cta-vormingen">Bekijk onze vormingen</a>
                   </div>
+                    <a href="#content-front" class="arrow"></a>
                 </div>
               </section>
             {% endif %}
@@ -140,7 +141,7 @@
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
-      <section{{ content_attributes.addClass(content_classes) }}>
+      <section{{ content_attributes.addClass(content_classes) }} {% if is_front %} id="content-front" {% endif %}>
 
         {# Highlighted #}
         {% if page.highlighted %}

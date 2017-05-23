@@ -1,6 +1,7 @@
 .heading-hero {
   background-image: url(../images/hero.png);
   box-shadow: 0 0 8px 0 rgba(0,0,0,.6);
+  height: 100vh;
 }
 .heading {
   background-color: $dark-grey;
@@ -15,12 +16,28 @@
     }
 }
 .navbar-nav.is-visible {
-  display: block;
-  margin-top: 50px;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $dark-grey;
+  z-index: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  position: fixed;
   li {
     width: 100%;
+    margin-bottom: 15px;
+    a {
+      font-size: 2rem;
+    }
   }
 }
 .logo {
