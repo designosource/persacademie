@@ -1,22 +1,22 @@
 .view-lesgevers {
+  margin-top: 45px;
+  text-align: center;
   .view-content {
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
     .views-row {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-@media (min-width: $smartphone-medium) {
-  .view-lesgevers {
-    .view-content {
-      display: flex;
-      flex-flow: wrap;
-      .views-row {
-        width: 45%;
-        margin-right: 5%;
-        margin-bottom: 20px;
+      margin-bottom: 50px;
+      .views-field-user-picture {
+        img {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 10px;
+          border-radius: 100%;
+        }
+      }
+      .views-field-name {
+        font-size: $font-size-h3;
       }
     }
   }
@@ -25,12 +25,24 @@
 @media (min-width: $desktop) {
   .view-lesgevers {
     .view-content {
-      display: flex;
-      flex-flow: wrap;
       .views-row {
-        width: 30%;
-        margin-right: 3%;
-        margin-bottom: 20px;
+        width: 100%;
+        .views-field-user-picture {
+          img {
+            margin-right: 50px;
+            float: left;
+          }
+        }
+        .views-field-name {
+          float: left;
+          width: 80%;
+          text-align: left;
+        }
+        .views-field-field-beschrijving {
+          float: left;
+          width: 80%;
+          text-align: left;
+        }
       }
     }
   }

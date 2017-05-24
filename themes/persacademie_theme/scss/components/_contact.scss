@@ -1,0 +1,27 @@
+#block-contactpage {
+  .contact-data {
+    margin-bottom: 30px;
+    p {
+      margin: 0;
+    }
+    .address {
+      margin-bottom: 20px;
+    }
+  }
+  .map {
+    iframe {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  #block-contactpage {
+    .contact-data {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+    }
+  }
+}

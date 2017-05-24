@@ -1,7 +1,21 @@
 .node--type-vorming {
+  margin-top: 15px;
   .group-left, .group-right {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .group-right {
+    .field--label {
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    h3 {
+      font-size: $font-size-p;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
   }
 }
 

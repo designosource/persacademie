@@ -1,0 +1,16 @@
+uuid: fbf57fb9-f45c-43f2-bad2-1f9595990450
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: profilepicture
+label: Profilepicture
+effects:
+  f0f34acd-01ce-429e-94df-6bd2cd6286de:
+    uuid: f0f34acd-01ce-429e-94df-6bd2cd6286de
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 110
+      height: 110

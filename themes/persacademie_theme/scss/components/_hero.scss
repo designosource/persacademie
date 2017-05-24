@@ -35,6 +35,19 @@
   .cta {
     margin-bottom: 35px;
     padding-top: 20px;
+    &:after {
+      content: "";
+      width:24px;
+      height:24px;
+      background: white;
+      -ms-transform:rotate(45deg); /* IE 9 */
+      -webkit-transform:rotate(45deg); /* Safari and Chrome */
+      transform:rotate(45deg);
+      position:absolute;
+      bottom:-12px;
+      left: 50%;
+      margin-left: -12px;
+    }
       a {
         padding: 10px;
         border: 1px solid $white;
@@ -74,7 +87,12 @@
 }
 
 @media (min-width: $desktop) {
+  .front-page {
+    .region-header {
+      padding-top: 50px;
+    }
+  }
   .region-header {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 10px;  }
 }
