@@ -10,6 +10,9 @@
 .navbar-nav {
   display: none;
     li {
+      &.active {
+        font-weight: 600;
+      }
       a {
         font-size: 1.3rem;
         color: $white;
@@ -141,5 +144,48 @@
   .navbar-nav {
     display: block;
     float: right;
+    li {
+      &.active {
+        font-weight: normal;
+        &:after {
+          content: "";
+          position: absolute;
+          left: calc(50% - 15px);
+          bottom: 0;
+          width: 30px;
+          height: 1px;
+          border-bottom: 4px solid $white;
+        }
+      }
+      a {
+        &:after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          bottom: 0;
+          left: calc(50% - 15px);
+          border-bottom: 4px solid $white;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          -moz-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          -o-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+        &:hover:after {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+    }
   }
 }

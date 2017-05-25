@@ -1,2 +1,2 @@
 .idea
-sites/default/settings.php
+sites/*/settings*.php
