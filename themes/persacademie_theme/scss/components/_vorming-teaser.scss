@@ -14,7 +14,10 @@
       border: 1px solid;
       padding: 35px 30px 30px 30px;
       background-color: $dark-grey;
+      background: url(../images/vorming-teaser.jpg) no-repeat;
+      background-size: cover;
       color: $white;
+      line-height: 22px;
       .views-field-title {
         margin-bottom: 15px;
         text-transform: uppercase;
@@ -45,6 +48,7 @@
 
 @media (min-width: $tablet) {
     .block-views-blockvormingen-block-teaser-vormingen {
+      margin-top: 60px;
       .view-content {
         justify-content: space-between;
         .views-row {

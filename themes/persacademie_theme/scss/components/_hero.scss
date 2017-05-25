@@ -35,24 +35,51 @@
   .cta {
     margin-bottom: 35px;
     padding-top: 20px;
-    &:after {
-      content: "";
-      width:24px;
-      height:24px;
-      background: white;
-      -ms-transform:rotate(45deg); /* IE 9 */
-      -webkit-transform:rotate(45deg); /* Safari and Chrome */
-      transform:rotate(45deg);
-      position:absolute;
-      bottom:-12px;
-      left: 50%;
-      margin-left: -12px;
-    }
       a {
         padding: 10px;
         border: 1px solid $white;
         color: $white;
+        &:hover {
+          text-decoration: none;
+        }
       }
+  }
+  .arrow-next {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: calc(100vh - 40px);
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, 0, 0);
+    cursor: pointer;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6s;
+    span {
+      position: absolute;
+      background: $white;
+      width: 50%;
+      height: 3px;
+      top: 50%;
+      &:first-child {
+        right: 3px;
+        transform: rotate(-45deg);
+      }
+      &:last-child {
+        left: 3px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform:translate3d(-50%, 8px, 0)
   }
 }
 

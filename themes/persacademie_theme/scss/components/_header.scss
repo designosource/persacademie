@@ -1,5 +1,6 @@
 .heading-hero {
-  background-image: url(../images/hero.png);
+  background: url(../images/hero.jpg) no-repeat;
+  background-size: cover;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.6);
   height: 100vh;
 }
@@ -28,7 +29,7 @@
   width: 100%;
   height: 100vh;
   background-color: $dark-grey;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
   overflow-y: auto;
   position: fixed;
@@ -47,8 +48,6 @@
 .nav > li > a:hover,.nav > li > a:focus {
   background-color: transparent;
 }
-
-
 .hamburger-menu {
   position: absolute;
   top: 0;
@@ -59,78 +58,69 @@
   padding-left: 25px;
   border-bottom: none !important;
   margin-top: 5px;
-}
-
-.hamburger-menu .cd-menu-text {
-  color: $white;
-  display: none;
-}
-
-.hamburger-menu .hamburger-menu-icon {
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 28px;
-  height: 3px;
-  background-color: $white;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  z-index: 9999;
-}
-
-.hamburger-menu .hamburger-menu-icon::before, .hamburger-menu .hamburger-menu-icon:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: $white;
-  right: 0;
-  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
-  -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
-  transition: transform .3s, top .3s, background-color 0s;
-}
-
-.hamburger-menu .hamburger-menu-icon::before {
-  top: -8px;
-}
-
-.hamburger-menu .hamburger-menu-icon::after {
-  top: 8px;
-}
-
-.hamburger-menu .hamburger-menu-icon.is-clicked {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.hamburger-menu .hamburger-menu-icon.is-clicked::before, .hamburger-menu .hamburger-menu-icon.is-clicked::after {
-  background-color: $white;
-}
-
-.hamburger-menu .hamburger-menu-icon.is-clicked::before {
-  top: 0;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-.hamburger-menu .hamburger-menu-icon.is-clicked::after {
-  top: 0;
-  -webkit-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  -o-transform: rotate(225deg);
-  transform: rotate(225deg);
+  .cd-menu-text {
+    color: $white;
+    display: none;
+  }
+  .hamburger-menu-icon {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 28px;
+    height: 3px;
+    background-color: $white;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    z-index: 9999;
+    &::before, &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: $white;
+      right: 0;
+      -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+      -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+      transition: transform .3s, top .3s, background-color 0s;
+    }
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      top: 8px;
+    }
+    &.is-clicked {
+      background-color: rgba(255, 255, 255, 0);
+      &::before, &::after {
+        background-color: $white;
+      }
+      &::before {
+        top: 0;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+      &::after {
+        top: 0;
+        -webkit-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        -o-transform: rotate(225deg);
+        transform: rotate(225deg);
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet) {

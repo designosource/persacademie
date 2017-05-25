@@ -1,4 +1,3 @@
-
 (function ($) {
     $(document).ready(function(){
         // Hamburger menu.
@@ -16,5 +15,12 @@
                 });
             }
         });
-        
-    });}(jQuery));
+
+        // Arrow next.
+        $(".arrow-next").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#content-front").offset().top
+            }, 800);
+        });
+    });
+}(jQuery));
