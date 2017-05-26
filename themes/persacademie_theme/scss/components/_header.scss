@@ -1,3 +1,6 @@
+.menu-is-open {
+  position: fixed;
+}
 .heading-hero {
   background: url(../images/hero.jpg) no-repeat;
   background-size: cover;
@@ -6,6 +9,8 @@
 }
 .heading {
   background-color: $dark-grey;
+  background: url(../images/hero.jpg) no-repeat;
+  background-size: cover;
 }
 .navbar-nav {
   display: none;

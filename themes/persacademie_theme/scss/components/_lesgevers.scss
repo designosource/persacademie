@@ -6,6 +6,9 @@
     flex-flow: wrap;
     justify-content: center;
     .views-row {
+      p {
+        font-size: 0.8rem;
+      }
       margin-bottom: 50px;
       .views-field-user-picture {
         img {
