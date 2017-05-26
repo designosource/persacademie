@@ -1,0 +1,15 @@
+.tabs {
+  margin-top: 20px;
+}
+.user-login-form, .user-pass {
+  label {
+    margin-bottom: 5px;
+    &::after {
+      height: 12px;
+      background-repeat: no-repeat;
+    }
+  }
+  input {
+    max-width: 500px;
+  }
+}

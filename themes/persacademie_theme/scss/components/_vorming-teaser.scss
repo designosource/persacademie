@@ -1,5 +1,6 @@
 .block-views-blockvormingen-block-teaser-vormingen {
-  margin-top: 25px;
+  padding-top: 50px;
+  position: relative;
   h2 {
     font-size: $font-size-h2;
     margin-bottom: 20px;
@@ -98,6 +99,23 @@
       }
     }
   }
+  &.block.block-views {
+    position: relative;
+    display: block;
+    &::before {
+      display: block;
+      content: "" !important;
+      position: absolute !important;
+      height: 100% !important;
+      top: 0 !important;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw !important;
+      background: $light-grey !important;
+      z-index: -1 !important;
+    }
+  }
+
 }
 
 @media (min-width: $tablet) {
