@@ -1,0 +1,21 @@
+uuid: 75eafcf7-19f2-4658-b052-a24d98ccb0b4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.basis_block_met_afbeelding
+    - field.storage.block_content.field_copyright
+  module:
+    - text
+id: block_content.basis_block_met_afbeelding.field_copyright
+field_name: field_copyright
+entity_type: block_content
+bundle: basis_block_met_afbeelding
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

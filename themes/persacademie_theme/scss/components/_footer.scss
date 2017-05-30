@@ -43,6 +43,16 @@
       margin-top: 20px;
     }
   }
+  .field--name-field-copyright {
+    margin-top: 25px;
+    text-align: center;
+    p {
+      margin: 0;
+      &:last-child {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }
 @media (min-width: $tablet) {
   .footer {
@@ -71,6 +81,19 @@
       float: right;
       img {
         margin-top: 0;
+      }
+    }
+    .field--name-field-copyright {
+      width: auto;
+      float: right;
+      margin-bottom: 0;
+      margin-top: -65px;
+      display: flex;
+      align-items: flex-end;
+      flex-flow: column wrap;
+      clear: both;
+      p {
+        margin: 0;
       }
     }
   }

@@ -1,11 +1,20 @@
 #block-contactpage {
-  .contact-data {
+  .contact-data, .locaties {
     margin-bottom: 30px;
     p {
       margin: 0;
+      font-size: 0.8rem;
     }
     .address {
       margin-bottom: 20px;
+    }
+  }
+  .gent, .mechelen {
+    margin-bottom: 20px;
+    p {
+      &:first-child {
+        font-weight: 600;
+      }
     }
   }
   .map {
@@ -19,10 +28,26 @@
 
 @media (min-width: $tablet) {
   #block-contactpage {
-    .contact-data {
+    .data {
+      width: 55%;
+      float: left;
+    }
+    .contact-data, .locaties {
       display: flex;
       flex-flow: wrap;
       justify-content: space-between;
+    }
+    .gent, .mechelen, .address, .contact-person {
+      width: 50%;
+    }
+    .map {
+      width: 45%;
+      float: right;
+      iframe {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 50px;
+      }
     }
   }
 }

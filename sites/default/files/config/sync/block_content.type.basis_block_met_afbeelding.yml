@@ -3,6 +3,6 @@ langcode: nl
 status: true
 dependencies: {  }
 id: basis_block_met_afbeelding
-label: 'Basis block met afbeelding'
+label: Footer
 revision: 0
-description: 'Een basis block met een titel, inhoud en een afbeelding.'
+description: 'Footer block'

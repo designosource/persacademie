@@ -104,4 +104,30 @@ access:
   delete_own:
     roles: {  }
     users: {  }
-handlers: {  }
+handlers:
+  bevestigingsmail:
+    id: email
+    label: Bevestigingsmail
+    handler_id: bevestigingsmail
+    status: true
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: test@test.be
+      from_options: {  }
+      from_name: default
+      subject: default
+      body: "&lt;p&gt;Hieronder vindt u de gegevens terug van uw inschrijving voor de vorming: [current-page:title]&lt;/p&gt;<br />\n[webform_submission:values]"
+      excluded_elements: {  }
+      html: true
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''

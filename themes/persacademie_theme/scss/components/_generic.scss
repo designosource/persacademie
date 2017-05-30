@@ -16,6 +16,7 @@ body {
 }
 .region-content {
   margin-top: 20px;
+  margin-bottom: 20px;
   ul {
     padding-left: 10px;
     margin-bottom: 15px;
@@ -46,6 +47,12 @@ h2 {
 h3 {
   font-size: $font-size-h2;
   margin-bottom: 10px;
+}
+.alert-success {
+  border-radius: 0;
+  border: 2px solid $light-green;
+  color: $black;
+  background-color: transparent;
 }
 @media (min-width: $tablet) {
   .group-left, .group-right {

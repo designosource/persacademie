@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.basis_block_met_afbeelding
     - field.field.block_content.basis_block_met_afbeelding.body
     - field.field.block_content.basis_block_met_afbeelding.field_afbeelding
+    - field.field.block_content.basis_block_met_afbeelding.field_copyright
   module:
     - image
     - text
@@ -29,6 +30,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_copyright:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
 hidden:
   langcode: true

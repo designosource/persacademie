@@ -24,7 +24,10 @@
         margin-bottom: 15px;
         text-transform: uppercase;
         span a{
-          color: $white
+          color: $white;
+          &:hover, &:focus {
+            text-decoration: none;
+          }
         }
       }
       .views-field-field-data {
@@ -82,7 +85,7 @@
               transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 
             }
-            &:hover {
+            &:hover, &:focus {
               color: $dark-grey;
               border-color: $white;
               text-decoration: none;
