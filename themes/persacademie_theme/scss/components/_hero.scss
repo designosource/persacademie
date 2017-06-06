@@ -21,7 +21,7 @@
       width: 100px;
       height: 1px;
       border-bottom: 2px solid $white;
-      content: ""
+      content: "";
     }
   }
   .site-slogan {
@@ -53,6 +53,9 @@
       z-index: 1;
       &:hover {
         color: $dark-grey;
+        text-decoration: none;
+      }
+      &:focus {
         text-decoration: none;
       }
     }

@@ -5,7 +5,7 @@
   background: url(../images/hero.jpg) no-repeat;
   background-size: cover;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.6);
-  height: 100vh;
+  height: 80vh;
 }
 .heading {
   background-color: $dark-grey;
@@ -159,7 +159,7 @@
           bottom: 0;
           width: 30px;
           height: 1px;
-          border-bottom: 4px solid $white;
+          border-bottom: 3px solid $white;
         }
       }
       a {
@@ -169,7 +169,7 @@
           width: 30px;
           bottom: 0;
           left: calc(50% - 15px);
-          border-bottom: 4px solid $white;
+          border-bottom: 3px solid $white;
           visibility: hidden;
           -webkit-transform: scaleX(0);
           -moz-transform: scaleX(0);

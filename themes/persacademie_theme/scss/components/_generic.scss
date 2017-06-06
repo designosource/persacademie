@@ -12,11 +12,16 @@ body {
 .group-header, .group-footer {
   p {
     font-size: $font-size-p;
+    max-width: 800px;
+  }
+}
+.front-page {
+  .page-header {
+    display: none;
   }
 }
 .region-content {
   margin-top: 20px;
-  margin-bottom: 20px;
   ul {
     padding-left: 10px;
     margin-bottom: 15px;
@@ -54,10 +59,14 @@ h3 {
   color: $black;
   background-color: transparent;
 }
+.view-frontpage {
+  margin-top: 20px;
+}
+
 @media (min-width: $tablet) {
   .group-left, .group-right {
     width: 48% !important;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .group-left {
     margin-right: 2%;

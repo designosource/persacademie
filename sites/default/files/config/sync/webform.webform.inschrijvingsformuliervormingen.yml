@@ -22,7 +22,7 @@ settings:
   form_submit_attributes: {  }
   form_exception_message: ''
   form_open_message: ''
-  form_close_message: ''
+  form_close_message: 'Deze vorming is volzet.'
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
@@ -67,7 +67,7 @@ settings:
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   limit_total: null
-  limit_total_message: ''
+  limit_total_message: 'Deze vorming is volzet.'
   limit_user: null
   limit_user_message: ''
   purge: none

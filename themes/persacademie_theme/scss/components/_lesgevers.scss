@@ -28,8 +28,9 @@
 @media (min-width: $desktop) {
   .view-lesgevers {
     .view-content {
+      justify-content: flex-start;
       .views-row {
-        width: 100%;
+        max-width: 800px;
         .views-field-user-picture {
           img {
             margin-right: 50px;
