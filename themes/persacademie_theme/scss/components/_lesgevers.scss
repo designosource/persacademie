@@ -24,6 +24,9 @@
       .views-field-name {
         font-size: $font-size-h3;
       }
+      .views-field-field-beschrijving {
+        padding: 5px 20px;
+      }
     }
   }
 }
@@ -48,6 +51,7 @@
         .views-field-field-beschrijving {
           float: left;
           width: 80%;
+          padding: 0;
           text-align: left;
         }
       }

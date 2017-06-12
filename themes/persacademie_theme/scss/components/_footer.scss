@@ -7,6 +7,9 @@
   h2 {
     text-align: center;
     color: $white;
+    &:after {
+      width: 0 !important;
+    }
   }
   .footer-data {
     display: flex;
@@ -18,7 +21,7 @@
       width: 100%;
       p {
         font-family: $font-family-karla;
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 30px;
       }
     }
@@ -36,7 +39,7 @@
     }
     p {
       margin: 0;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
   .field--name-field-afbeelding {
