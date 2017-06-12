@@ -41,18 +41,24 @@
     .form-item {
       label {
         margin-bottom: 5px;
+        font-family: $font-family-karla !important;
+      }
+      input {
+        border-radius: 0;
+        font-family: $font-family-karla !important;
       }
     }
   }
   button {
+    font-family: $font-family-karla;
     width: 200px;
     height: 40px;
     position: relative;
     z-index: 1;
     border-radius: 0 !important;
-    border: 1px solid $dark-grey !important;
+    border: 1px solid $red !important;
     background-color: transparent !important;
-    color: $dark-grey !important;
+    color: $red !important;
     -webkit-transition: border-color 0.4s, color 0.4s;
     -moz-transition: border-color 0.4s, color 0.4s;
     -ms-transition: border-color 0.4s, color 0.4s;
@@ -70,7 +76,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: $dark-grey;
+      background: $red;
       z-index: -1;
       opacity: 0;
       -webkit-transform: scale3d(0.7, 1, 1);
@@ -103,6 +109,12 @@
         transform: translate3d(0, 0, 0);
       }
     }
+  }
+  .field--item {
+    margin-top: 10px;
+  }
+  input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent !important;
   }
 }
 

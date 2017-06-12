@@ -3,7 +3,7 @@
   flex-flow:wrap;
   justify-content: center;
   flex-direction: column;
-  height: calc(100% - 60px);
+  height: calc(100% - 80px);
 }
 .hero-content {
   text-align: center;
@@ -14,6 +14,7 @@
     padding-bottom: 15px;
     font-size: 1.3rem;
     position: relative;
+    letter-spacing: 6px;
     &:after {
       position: absolute;
       left: calc(50% - 50px);
@@ -25,17 +26,30 @@
     }
   }
   .site-slogan {
+    font-weight: 300;
     margin-bottom: 20px;
     max-width: 400px;
     margin-right: auto;
     margin-left: auto;
-    font-size:1.1rem;
+    font-size: 1.1rem;
     line-height: 26px;
+    letter-spacing: 2.5px;
+    font-family: $font-family-karla;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      bottom: 0;
+      left: 2px;
+      border-bottom: 3px solid #E41700;
+    }
   }
   .cta {
-    margin-bottom: 35px;
+    margin-bottom: 0;
     padding-top: 20px;
     a {
+      font-family: $font-family-karla;
+      font-size: $font-family-oswald;
       padding: 10px;
       border: 1px solid $white;
       color: $white;
@@ -170,25 +184,25 @@
     .sitename {
       margin-bottom: 30px;
       padding-bottom: 30px;
-      font-size: 2.5rem;
+      font-size: 3rem;
       &:after {
         width: 150px;
         left: calc(50% - 75px);
       }
     }
     .site-slogan {
-      max-width: 37%;
+      max-width: 45%;
       margin-right: auto;
       margin-left: auto;
       line-height: 35px;
-      margin-bottom: 25px;
-      font-size: 1.4rem;
+      margin-bottom: 0;
+      font-size: 1.2rem;
     }
     .cta {
-      margin-bottom: 80px;
+      margin-bottom: 0;
       padding-top: 40px;
       a {
-        padding: 20px;
+        padding: 12px;
         border: 1px solid;
         &:hover {
           text-decoration: none;
@@ -199,13 +213,7 @@
 }
 
 @media (min-width: $desktop) {
-  .front-page {
-    .region-header {
-      padding-top: 50px;
-    }
-  }
-  .region-header {
-    padding-top: 20px;
-    padding-bottom: 10px;
+  .hero {
+    height: calc(100% - 110px);
   }
 }

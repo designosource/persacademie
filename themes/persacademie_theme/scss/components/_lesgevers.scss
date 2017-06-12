@@ -6,8 +6,11 @@
     flex-flow: wrap;
     justify-content: center;
     .views-row {
+      .views-field-name {
+        font-family: $font-family-oswald;
+      }
       p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
       margin-bottom: 50px;
       .views-field-user-picture {

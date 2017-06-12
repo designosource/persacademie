@@ -1,17 +1,21 @@
 #block-contactpage {
+  font-family: $font-family-oswald;
   .contact-data, .locaties {
     margin-bottom: 30px;
     p {
       margin: 0;
       font-size: 0.8rem;
+      font-family: $font-family-karla;
     }
     .address {
       margin-bottom: 20px;
     }
     a {
+      font-family: $font-family-karla;
+      font-size: 0.8rem;
       padding: 10px;
-      border: 1px solid $dark-grey;
-      color: $dark-grey;
+      border: 1px solid $red;
+      color: $red;
       position: relative;
       -webkit-transition: border-color 0.4s, color 0.4s;
       -moz-transition: border-color 0.4s, color 0.4s;
@@ -38,7 +42,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: $dark-grey;
+        background: $red;
         z-index: -1;
         opacity: 0;
         -webkit-transform: scale3d(0.7, 1, 1);
@@ -59,7 +63,7 @@
       }
       &:hover {
         color: $white;
-        border-color: $dark-grey;
+        border-color: $red;
         &::before {
           opacity: 1;
           -webkit-transform: translate3d(0, 0, 0);

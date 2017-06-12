@@ -1,8 +1,14 @@
 .node--type-vorming {
-  margin-top: 15px;
   .group-left, .group-right {
     width: 100%;
     margin-bottom: 40px;
+  }
+  .field--label {
+    font-family: $font-family-oswald;
+    font-weight: 500;
+  }
+  .field--item, .field--name-field-omschrijving, .field--name-taxonomy-term-title h3 {
+    font-family: $font-family-karla;
   }
   .group-right {
     .field--label {

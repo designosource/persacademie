@@ -3,6 +3,7 @@
   background-color: $dark-grey;
   color: $white;
   margin-top: 0;
+  font-family: $font-family-oswald;
   h2 {
     text-align: center;
     color: $white;
@@ -15,8 +16,9 @@
     .contact-data, .person-data {
       margin-bottom: 20px;
       width: 100%;
-      font-size: 1rem;
       p {
+        font-family: $font-family-karla;
+        font-size: 0.8rem;
         line-height: 30px;
       }
     }
@@ -34,6 +36,7 @@
     }
     p {
       margin: 0;
+      font-size: 0.8rem;
     }
   }
   .field--name-field-afbeelding {
@@ -49,6 +52,7 @@
     text-align: center;
     p {
       margin: 0;
+      font-family: $font-family-karla;
       &:last-child {
         font-size: 0.9rem;
       }

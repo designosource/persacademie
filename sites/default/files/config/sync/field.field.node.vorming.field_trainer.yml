@@ -26,6 +26,7 @@ settings:
         administrator: '0'
     target_bundles: null
     sort:
-      field: _none
+      field: name
+      direction: ASC
     auto_create: false
 field_type: entity_reference

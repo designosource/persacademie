@@ -2,6 +2,7 @@
   padding-top: 50px;
   margin-top: 50px;
   position: relative;
+  font-family: $font-family-oswald;
   h2 {
     font-size: $font-size-h2;
     margin-bottom: 20px;
@@ -25,6 +26,7 @@
         text-transform: uppercase;
         span a{
           color: $white;
+          letter-spacing: 1px;
           &:hover, &:focus {
             text-decoration: none;
           }
@@ -45,8 +47,9 @@
           position: relative;
           z-index: 1;
           a {
+            font-family: $font-family-karla;
             color: $white;
-            padding: 10px 15px;
+            padding: 8px 15px;
             border: 2px solid $white;
             -webkit-transition: border-color 0.4s, color 0.4s;
             -moz-transition: border-color 0.4s, color 0.4s;
@@ -61,10 +64,10 @@
             &::before {
               content: '';
               position: absolute;
-              top: -10px;
+              top: -6px;
               left: 0;
               width: 100%;
-              height: 37px;
+              height: 39px;
               background: $white;
               z-index: -1;
               opacity: 0;

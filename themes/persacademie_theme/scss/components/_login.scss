@@ -1,8 +1,10 @@
 .tabs {
   margin-top: 20px;
+  font-family: $font-family-oswald;
 }
 .user-login-form, .user-pass {
   margin-bottom: 50px;
+  font-family: $font-family-oswald;
   label {
     margin-bottom: 5px;
     &::after {
@@ -12,16 +14,18 @@
   }
   input {
     max-width: 500px;
+    border-radius: 0;
   }
   button {
+    font-family: $font-family-karla;
     width: 200px;
     height: 40px;
     position: relative;
     z-index: 1;
     border-radius: 0 !important;
-    border: 1px solid $dark-grey !important;
+    border: 1px solid $red !important;
     background-color: transparent !important;
-    color: $dark-grey !important;
+    color: $red !important;
     -webkit-transition: border-color 0.4s, color 0.4s;
     -moz-transition: border-color 0.4s, color 0.4s;
     -ms-transition: border-color 0.4s, color 0.4s;
@@ -39,7 +43,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: $dark-grey;
+      background: $red;
       z-index: -1;
       opacity: 0;
       -webkit-transform: scale3d(0.7, 1, 1);
