@@ -112,6 +112,9 @@ h3 {
     height: 17px;
     position: absolute;
     -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
     width: 17px;
     z-index: 1;
@@ -122,7 +125,9 @@ h3 {
     border-right-style: none;
     height: 10px;
     -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
   }
   &:after {
     background: #FFFFFF;
